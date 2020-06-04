@@ -137,13 +137,13 @@ input[type="number"] {
   color: #fff;
   font-size: 20px;
   line-height: 20px;
-  padding: 2px 5px;
+  /* padding: 2px 5px;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(-100%, -50%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; */
 }
 
 .update-btn {
@@ -154,15 +154,29 @@ input[type="number"] {
   font-size: 20px;
   line-height: 20px;
   padding: 2px 5px;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 0;
   transform: translate(-100%, -50%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; */
 }
 
 .list li:hover .delete-btn,
-.update-btn {
+.update-btn,
+.actionBtn {
   opacity: 1;
+}
+.actionBtn {
+  position: absolute;
+  left: -55px;
+  top: 8px;
+  display: block;
+  width: 50px;
+}
+.actionBtn button {
+  display: inline-block;
+  width: 25px;
+  line-height: 26px;
+  padding: 0;
 }
